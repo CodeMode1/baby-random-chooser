@@ -1,0 +1,22 @@
+.ran-panel {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between; /* optional */
+}
+
+.ran-g-b {
+    color: black;
+    background-color: pink;    
+}
+
+.ran-b-b {
+    color: black;
+    background-color: lightblue;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
