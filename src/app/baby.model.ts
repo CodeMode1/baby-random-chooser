@@ -9,9 +9,9 @@ export class Baby {
 		const {
 			name = "",
 			description = "",
-			imgUrl,
 			astrologicSign,
-			isBoy = true
+			isBoy = true,
+			imgUrl = isBoy ? "" : "",
 		} = obj;
 
 		this.name = name;
