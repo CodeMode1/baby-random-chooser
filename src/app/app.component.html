@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="ran-panel">
-  <button class='ran-g-b' (click)="onGetGirlNames()">Girl</button>
-  <i>or</i>
-  <button class='ran-b-b' (click)="onGetBoyNames()">Boy</button>
+	<button class='ran-g-b' (click)="onGetGirlNames()">Girl</button>
+	<i>or</i>
+	<button class='ran-b-b' (click)="onGetBoyNames()">Boy</button>
 </div>
 
-
-<h3>{{ babyName }}</h3>
+<div class="baby-box" *ngIf="baby" [ngClass]="{ 'boy': baby.isBoy }">
+	<h3>{{ baby.name }}</h3>
+</div>
 
 <router-outlet></router-outlet>
